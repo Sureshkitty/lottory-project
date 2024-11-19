@@ -39,7 +39,7 @@ header {
 
 h1 {
   font-size: 2.5rem;
-  color: #4CAF50;
+  color: #387cc9;
 }
 
 /* Date Picker Section */
@@ -61,14 +61,14 @@ section {
 
 #date-picker:focus {
   outline: none;
-  border-color: #4CAF50;
+  border-color: #2258aa;
 }
 
 /* Selected Date Text */
 #selected-date {
   font-size: 1.2rem;
   margin-top: 10px;
-  color: #4CAF50;
+  color: #2743bd;
 }
 
 /* Table Container Styling */
@@ -97,7 +97,7 @@ th, td {
 }
 
 th {
-  background-color: #4CAF50;
+  background-color: #3960cc;
   color: white;
 }
 
@@ -116,7 +116,7 @@ tr:hover td {
   position: fixed;
   top: 20px;
   right: 20px;
-  background-color: #4CAF50;
+  background-color: #165588;
   border: none;
   padding: 10px 20px;
   color: white;
@@ -127,7 +127,7 @@ tr:hover td {
 }
 
 #theme-toggle:hover {
-  background-color: #45a049;
+  background-color: #4569a0;
 }
 
 /* Media Query for Responsiveness */
