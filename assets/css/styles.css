@@ -1,0 +1,168 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark theme styles */
+body.dark-theme {
+  background-color: #2c2c2c;
+  color: white;
+}
+
+body.dark-theme .button-live {
+  background-color: #4CAF50;
+}
+
+body.dark-theme .button-previous {
+  background-color: #007BFF;
+}
+
+/* Light theme styles */
+body.light-theme {
+  background-color: #ffffff;
+  color: #333;
+}
+
+body.light-theme .button-live {
+  background-color: #388E3C;
+}
+
+body.light-theme .button-previous {
+  background-color: #2196F3;
+}
+
+/* Header container styles */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center; /* Center the header title */
+  align-items: center;
+  position: relative;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+h1 span {
+  color: #4CAF50;
+}
+
+#theme-toggle-btn {
+  position: absolute;
+  right: 20px; /* Align to the top-right */
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+#theme-toggle-btn:hover {
+  opacity: 0.8;
+}
+
+/* Main content styles */
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px); /* Account for header height */
+  padding: 20px;
+  margin-top: 60px; /* To give space for the fixed header */
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  padding: 15px 30px;
+  font-size: 18px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+/* Footer with Contact Icons and App Names */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Increased gap between items */
+  margin-bottom: 20px;
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 30px;
+  transition: color 0.3s ease;
+}
+
+.contact-icon span {
+  margin-left: 10px; /* Space between icon and app name */
+  font-size: 16px;
+}
+
+.contact-icon:hover {
+  color: #e9ec2a; /* Change the icon and text color on hover */
+}
+
+.contact-icon span:hover {
+  color: #d4b920; /* Change the text color on hover */
+}
+
+/* Responsive design for footer */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 15px; /* Reduced gap for smaller screens */
+  }
+
+  .contact-icon {
+    font-size: 25px;
+  }
+
+  .contact-icon span {
+    font-size: 14px;
+  }
+}
